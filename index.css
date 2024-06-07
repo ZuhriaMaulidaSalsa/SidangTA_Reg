@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* background: #800000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ini buat card */
+section .content .card {
+    width: 100%;
+    max-width: 820px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+/* sampe sini */
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+    overflow: auto;
+}
+
+header .logo {
+    color: #800000;
+    font-size: 1.2em;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.1em;
+}
+
+header ul {
+    margin-top: 5px;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+header ul li a {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+header ul li span {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+header ul li a::before {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+header ul li a::after {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: solid;
+    letter-spacing: 0.5px;
+}
+
+header ul li a:hover {
+    color: #800000;
+    /* color: #800000; */
+    font-weight: bold;
+}
+
+.content {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow-y: hidden; */
+    margin-left: 50px;
+}
+
+.content .textbox {
+    position: relative;
+}
+
+.content .textbox h2 {
+    color: #333;
+    font-size: 90px;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textbox h2 span {
+    color: #800000;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textbox p {
+    color: #333;
+}
+
+.content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #800000;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img {
+    max-width: 340px;
+}
+
+.circle1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #800000;
+    clip-path: circle(600px at right 800px);
+}
+
+.circle2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #800000;
+    clip-path: circle(50px at right 10px);
+}
+
+/* FOOTER */

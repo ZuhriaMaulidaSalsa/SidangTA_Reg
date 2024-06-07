@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* background: #800000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+    overflow: auto;
+}
+
+header .logo {
+    color: #800000;
+    font-size: 1.2em;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.1em;
+}
+
+header ul {
+    margin-top: 5px;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+header ul li a {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+header ul li span {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+
+
+.content {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrp {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tampilan {
+    /* position: relative; */
+    padding-top: 50px;
+    display: flex;
+    background: #fff;
+}
+
+
+.kolom {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: px;
+}
+
+.kolom.episode{
+    padding-right: 200px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    padding-right: 100px;
+    padding-top: 5px;
+}
+
+.btn {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #800000;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+    /* font-weight: bold; */
+    background-color: #370000;
+}
+
+.content .abc {
+    display: block;
+}

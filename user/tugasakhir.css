@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    /* --background-header: #000000; */
+    --box-shadow-hover: rgba(0, 0, 0, 0.283) 0px 1px 2px, rgba(0, 0, 0, 0.283) 0px 2px 4px, rgba(0, 0, 0, 0.283) 0px 4px 8px, rgba(0, 0, 0, 0.283) 0px 8px 16px, rgba(0, 0, 0, 0.283) 0px 16px 32px, rgba(0, 0, 0, 0.283) 0px 32px 64px;
+    /* --box-shadow: none; */
+    /* background-color: #111111; */
+    /* color: white; */
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.lagu {
+    box-shadow: var(--box-shadow);
+    /* border: 1px solid #800000; */
+    width: fit-content;
+    border-radius: 15px;
+    transition: 0.3s;
+    border: #800000 solid 5px;
+}
+
+.lagu:hover {
+    box-shadow: var(--box-shadow-hover);
+}
+
+.cover-album {
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.judul {
+    padding: 15px;
+    position: relative;
+}
+
+.judul a {
+    color: var(--background-header);
+    position: absolute;
+    right: 18px;
+    top: 15px;
+    font-size: 20px;
+    /* width: 40px;
+    height: 40px; */
+    background-color: var(--color-primary);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.judul a button {
+    border: 0px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.judul a img {
+    height: 35px;
+}
+
+.album {
+    width: fit-content;
+    padding: 50px;
+    border-radius: 10px;
+    border: 5px dotted var(--color-secondary);
+    color: var(--color-icon);
+    text-align: center;
+    cursor: pointer;
+}
+
+.album p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.album i {
+    font-size: 48px;
+}
+
+.tambah-lagu input[type="file"] {
+    margin-bottom: -20px;
+    opacity: 0;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+
+    main {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px 0;
+    }
+
+    .lagu {
+        width: 100%;
+    }
+
+    .cover-album {
+        width: 100%;
+    }
+
+    .bg-cover {
+        height: 700px;
+    }
+}
+
+.judul input {
+    position: center;
+    right: 18px;
+    top: 18px;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    
+    color: #800000;
+}
+
+.judul input:hover {
+    cursor: pointer;
+}
